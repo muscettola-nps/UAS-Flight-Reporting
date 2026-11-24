@@ -24,7 +24,7 @@ library(shiny)
 ```
 
 
-#start by installing shiny
+#install other contingent packages
 ```{r}
 install.packages("boot")
 install.packages("dplyr")
