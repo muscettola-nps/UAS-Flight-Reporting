@@ -1,0 +1,29 @@
+---
+title: "InstallingShiny"
+output: html_document
+date: "2026-11-23"
+---
+
+#start by installing shiny
+```{r}
+install.packages("boot")
+install.packages("dplyr")
+install.packages("DT")
+install.packages("fs")
+# install.packages("FSA")
+# install.packages("ggplot2")
+# install.packages("ggrepel")
+# install.packages("here")
+# install.packages("htmltools")
+# install.packages("kableExtra")
+# install.packages("knitr")
+# install.packages("lubridate")
+# install.packages("multcompView")
+# install.packages("patchwork")
+# install.packages("plotly")
+# install.packages("purrr")
+ install.packages("shiny")
+# install.packages("stringr")
+# install.packages("stringdist")
+# install.packages("tidyverse")
+```
