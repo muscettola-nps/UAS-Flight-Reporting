@@ -3,6 +3,26 @@ title: "InstallingShiny"
 output: html_document
 date: "2026-11-23"
 ---
+```{r}
+# 1. Point R at the library where you installed Rcpp.
+#    Skip this line if you installed it into the default AppData library.
+#.libPaths(c("C:/Rlibs", .libPaths()))
+
+# 2. Confirm Rcpp loads
+library(Rcpp)
+
+# 3. Clear out any half-installed shiny or lock folders
+for (lib in .libPaths()) {
+  unlink(list.files(lib, pattern = "^(shiny|00LOCK)", full.names = TRUE), recursive = TRUE)
+}
+
+# 4. Download Shiny from CRAN website and unzip in the AppData/Local/R/win-library/4.5 folder
+# 4.5 Restart R
+
+# 5. Test it
+library(shiny)
+```
+
 
 #start by installing shiny
 ```{r}
